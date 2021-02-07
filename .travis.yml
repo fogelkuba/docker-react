@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t fogelkuba -f Dockerfile.dev .
